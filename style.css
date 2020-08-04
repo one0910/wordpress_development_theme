@@ -1,0 +1,285 @@
+/*
+Theme Name: My Wordpress Development Theme
+Theme URI: http://underscores.me/
+Author: Ellson
+Author URI: https://ellsonslife.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ken-cens-com
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ken-cens.com is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/* 全域CSS */
+body,html
+{
+    font-family: Microsoft JhengHei;
+    font-weight: 300;
+    /*overflow: hidden;*/
+}
+
+h1,h2,h3,h4{
+    font-weight: 600;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-5 {
+    margin-top: 6rem;
+}
+
+.pb-4 {
+    padding-bottom: 4rem;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.leanFont {
+    font-weight: 300;
+    line-height: 1.1;
+}
+a{
+    color: #2d2d2d;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #8abc00;
+}
+/* HeroImage CSS */
+.jumbotron {
+    background-image: url(assets/images/heroImage.jpg);
+    height: 725px;
+    background-size: cover;
+    padding-top: 300px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+/* 訂閱欄目 CSS */
+.subscribe-bar {
+    background: #3e4249;
+    color: #ffffff;
+    padding: 1.7rem 0 1.5rem 0;
+}
+
+.subscribe-bar p {
+    font-size: 18px;
+}
+
+/* 為何研究wordpress主題開發 CSS */
+.reason {
+    text-align: center;
+    margin: 0 0 4em 0;
+}
+
+
+.reason-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0 0 0;
+    list-style: none;
+}
+
+.reason-flex li {
+    width: 49%;
+}
+
+.reason-flex li img {
+    max-width: 90%;
+}
+
+.reason-flex li:nth-of-type(2) {
+    padding: 0 0 0 3em;
+    text-align: left;
+}
+.reason-flex li:nth-of-type(2) h4{
+    padding: 0 0 1.2em 0;
+}
+
+/* 課程優勢欄位 CSS */
+.features {
+    background-image: url(assets/images/background-blink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Rocket {
+    width: 130px;
+}
+
+.smallPhoto {
+    width: 83px;
+}
+
+/* 基礎架網課程欄位 CSS */
+#otherCourse {
+    background-image: url('assets/images/learn-more.jpg');
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    padding-top: 200px;
+}
+
+/* 頁尾footer CSS */
+footer {
+    background-color: #292b2c;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 0 5px;
+}
+
+footer a:visited {
+    color: #fff;
+}
+
+footer a:link {
+    color: #fff;
+}
+
+/* Blog header 圖片 CSS */
+#feature-image {
+    background-image: url('assets/images/blog_post.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+#feature-image h1 {
+    padding-top: 80px;
+}
+
+/* Blog文章 CSS */
+.primary {
+    margin-top: 100px;
+}
+
+.post {
+    border-bottom: 1px solid #dee;
+}
+
+.post h3 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.post-detail,.post-excerpt,.post-content p
+{
+    font-size: 15px;
+}
+
+/* sidebar CSS */
+.widget{
+    margin-top: 30px;
+}
+.widget p{
+    font-size: 16px;
+}
+.widget label{
+    font-size: 20px;
+}
+
+.widget ul{
+    list-style: none;
+    padding: 0px;
+    font-size: 16px;
+}
+
+/* 留言 CSS */
+.form-horizontal .control-label{
+    text-align: left;
+}
+
+#comments small{
+    font-size: 60%;
+    font-weight: 300;
+    color: #777777;
+}
+
+#comments ol{
+    /*display: none;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comments ol li{
+    background-color:rgba(220,220,220,0.3);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+}
+
+/* Wordpress 留言區的CSS */
+#comments footer{
+    background: none;
+    color: inherit;
+}
+
+#comments footer a{
+    color: inherit;
+}
+
+/* Wordpress 輸入屬性的CSS */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea{
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc ;
+    width: 100%;
+}
+
+/* Wordpress 輸入屬性的CSS */
+.widget_search .search-submit{
+    /*display: none;*/
+}
