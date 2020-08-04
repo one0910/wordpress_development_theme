@@ -13,7 +13,8 @@
                 </div>
                 <div class="col-sm-4">
                     <!-- <button type="button" class="btn btn-success btn-lg leanFont" data-toggle="modal" data-target="#myModal">這裡點擊訂閱</button> -->
-                    <button type="button" class="btn btn-success btn-lg leanFont" data-toggle="modal" data-target="#myModal"><?php echo $subscribe_bar__button_text ?></button>
+                    <!-- <button type="button" class="btn btn-success btn-lg leanFont" data-toggle="modal" data-target="#myModal"><?php echo $subscribe_bar__button_text ?></button> -->
+                    <a class="btn btn-success btn-lg leanFont" href="https://github.com/one0910/wordpress_development_theme">goGithub</a>
                 </div>
             </div>
         </div>

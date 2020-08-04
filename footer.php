@@ -17,7 +17,8 @@
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <h2 class="leanFont"><strong>您是否想了解更多關於HTML、CSS、Javascript、jQuery、PHP、mySQL等語言及架站工具?</strong></h2>
-                            <p><a href="#" class="btn btn-lg btn-danger leanFont mt-4">點擊這裡獲得優惠卷</a></p>
+                            <!-- <p><a href="#" class="btn btn-lg btn-danger leanFont mt-4">點擊這裡獲得優惠卷</a></p> -->
+                            <p><a href="#" class="btn btn-lg btn-danger leanFont mt-4" data-toggle="modal" data-target="#myModal">輸入您的Email，訂閱我的電子報</a></p>
                         </div>
                     </div>
                 </div>
